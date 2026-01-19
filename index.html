@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Luciano Alta Cultura</title>
+  
+  <!-- Fonte elegante e clássica (EB Garamond) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;700&display=swap" rel="stylesheet">
+  
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    body {
+      font-family: 'EB Garamond', serif;
+      background-color: #ffffff;
+      color: #111111;
+      line-height: 1.6;
+    }
+    
+    header {
+      text-align: center;
+      padding: 80px 20px 40px;
+    }
+    
+    h1 {
+      font-size: 3.8rem;
+      font-weight: 700;
+      letter-spacing: -1px;
+      color: #000000;
+    }
+    
+    .maps {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 100px;
+      margin: 50px 0;
+      flex-wrap: wrap;
+    }
+    
+    .map {
+      text-align: center;
+    }
+    
+    .map img {
+      width: 320px;
+      height: auto;
+      border: 1px solid #e0e0e0;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    }
+    
+    .videos-grid {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 20px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+      gap: 40px;
+    }
+    
+    .video-card {
+      background: #ffffff;
+      border: 1px solid #eeeeee;
+      border-radius: 12px;
+      overflow: hidden;
+      transition: transform 0.2s, box-shadow 0.2s;
+      text-align: center;
+    }
+    
+    .video-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 12px 32px rgba(0,0,0,0.1);
+    }
+    
+    .video-card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+    
+    .video-info {
+      padding: 20px;
+    }
+    
+    .video-info h3 {
+      font-size: 1.5rem;
+      margin-bottom: 12px;
+      color: #111;
+    }
+    
+    .btn-download {
+      display: inline-block;
+      padding: 12px 28px;
+      background-color: #000000;
+      color: #ffffff;
+      text-decoration: none;
+      border-radius: 6px;
+      font-weight: 500;
+      transition: background 0.3s;
+    }
+    
+    .btn-download:hover {
+      background-color: #222222;
+    }
+    
+    footer {
+      text-align: center;
+      padding: 80px 20px;
+      margin-top: 80px;
+      border-top: 1px solid #eeeeee;
+      background: #f9f9f9;
+    }
+    
+    footer h2 {
+      font-size: 2.2rem;
+      margin-bottom: 20px;
+    }
+    
+    @media (max-width: 768px) {
+      h1 { font-size: 2.8rem; }
+      .maps { gap: 60px; }
+      .map img { width: 280px; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Luciano Alta Cultura</h1>
+  </header>
+
+  <section class="maps">
+    <div class="map">
+      <!-- Substitua pela sua imagem real do mapa EUA com bandeira -->
+      <img src="https://via.placeholder.com/320x200/0000FF/FFFFFF?text=Mapa+EUA+com+Bandeira" alt="Estados Unidos">
+    </div>
+    <div class="map">
+      <!-- Substitua pela sua imagem real do mapa Europa/UE com bandeira -->
+      <img src="https://via.placeholder.com/320x200/003399/FFFFFF?text=Mapa+Europa+UE+com+Bandeira" alt="União Europeia">
+    </div>
+  </section>
+
+  <main class="videos-grid">
+    <!-- Exemplo de card de vídeo - repita quantos quiser -->
+    <article class="video-card">
+      <img src="https://via.placeholder.com/340x200/111111/eeeeee?text=Platão+-+A+República" alt="Thumbnail Platão">
+      <div class="video-info">
+        <h3>Platão - A República (60 min)</h3>
+        <a href="https://seusite.com/downloads/platao-republica.mp4" download class="btn-download">
+          Baixar Gratuitamente
+        </a>
+      </div>
+    </article>
+
+    <article class="video-card">
+      <img src="https://via.placeholder.com/340x200/111111/eeeeee?text=Aristóteles+-+Ética" alt="Thumbnail Aristóteles">
+      <div class="video-info">
+        <h3>Aristóteles - Ética a Nicômaco (60 min)</h3>
+        <a href="https://seusite.com/downloads/aristoteles-etica.mp4" download class="btn-download">
+          Baixar Gratuitamente
+        </a>
+      </div>
+    </article>
+
+    <!-- Adicione mais cards aqui conforme gerar os vídeos -->
+  </main>
+
+  <footer>
+    <h2>Divulgue Sua Ideia</h2>
+    <p>Projetos baseados em educação liberal clássica são bem-vindos para captação de recursos.<br>
+       Envie detalhes para: <strong>contato@lucianoaltacultura.com</strong> (ou use formulário no futuro)</p>
+  </footer>
+
+</body>
+</html>
